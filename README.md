@@ -1,4 +1,4 @@
-# React-CSS...Website
+# REACT/CSS...Website
 Personal Website
 
 These are the files i've used to create my personal portfolio. 
