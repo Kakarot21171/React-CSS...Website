@@ -1,0 +1,57 @@
+#works{
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem; /* 0 padding on top and bottom, 1rem padding on left and right */
+}
+
+.worksTitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.worksDesc{
+    font-weight: 300;
+    font-size: 1rem;
+    max-width: 45rem;
+}
+
+.worksImgs{
+    display: flex;
+    align-items: center; /*typing "ai:c" gives you a shortcut for this command and will align items to center. typing the first letter of each word will give you this */
+    justify-content: center;
+    width: 100vw;
+    max-width: 65rem;
+    flex-wrap: wrap; /* if content exceeds the limit, it will wrap to the next line */
+}
+
+.worksImg{
+    object-fit: cover;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.worksBtn{
+    margin: 3rem 0; 
+    padding: 0.5rem 2.5rem;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1rem; 
+}
+
+@media screen and (max-width: 580px){
+    .worksImg{
+        height: 48vw;
+    }
+    
+}
