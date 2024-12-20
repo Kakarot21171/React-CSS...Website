@@ -47,7 +47,7 @@ const Contact = () => {
             <input type="text" className="name" placeholder='Your Name' name='your_name'/>
             <input type="email" className="email" placeholder='Your Email'name='your_email' />
             <textarea className='msg' name="message" rows="5" placeholder="Your Message"></textarea>
-            <button className ="submitBtn" value='send' type="submit">Submit</button>
+            <button className ="submitBtn" value='send' type="submit">Submittt</button>
             <div className="links">
               <img src={facebook} alt="" className="link" />
               <img src={linkedin} alt="" className="link" />
