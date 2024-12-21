@@ -36,13 +36,15 @@
     justify-content: center;
     padding: 0 1rem;
     border-radius: 2rem;
-
+    cursor: pointer;
 }
 .desktopMenuImg{
     object-fit: cover;
-    width: 2rem;
+    width: 1.2rem;
     margin: 1rem;
 }
+
+
 
 .active{
     color: rgb(0, 255, 50);
@@ -62,13 +64,12 @@
 }
 
 .listItem{
-    padding: 0.2rem;
+    padding-top: 0.3rem;
     padding-left: 0.9rem;
-    padding-right: 0rem;
     margin: 0.25rem;
     cursor: pointer;
     height: fit-content;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
 }
 
 .listItem:hover{
@@ -95,3 +96,4 @@
             display: none;
         }
 }
+

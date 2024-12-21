@@ -13,8 +13,7 @@
 .skillTitle{
     font-size: 3rem;
     font-weight: 600;
-    padding-top: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
 }
 
 .skillDesc{
@@ -66,4 +65,8 @@
     .skillBarText>h2{
         font-size: 4vw;
     }
+    #skills{
+        margin-top: -4rem;
+    }
 }
+

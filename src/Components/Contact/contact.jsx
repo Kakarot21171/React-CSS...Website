@@ -47,12 +47,20 @@ const Contact = () => {
             <input type="text" className="name" placeholder='Your Name' name='your_name'/>
             <input type="email" className="email" placeholder='Your Email'name='your_email' />
             <textarea className='msg' name="message" rows="5" placeholder="Your Message"></textarea>
-            <button className ="submitBtn" value='send' type="submit">Submittt</button>
+            <button className ="submitBtn" value='send' type="submit">Submit</button>
             <div className="links">
-              <img src={facebook} alt="" className="link" />
-              <img src={linkedin} alt="" className="link" />
-              <img src={instagram} alt="" className="link" />
-              <img src={twitter} alt="" className="link" />
+              <a href="https://facebook.com/your-profile" target="_blank" rel="noopener noreferrer">
+                <img src={facebook} alt="Facebook" className="link" />
+              </a>
+              <a href="https://linkedin.com/in/jaeden-jones" target="_blank" rel="noopener noreferrer">
+                <img src={linkedin} alt="LinkedIn" className="link" />
+              </a>
+              <a href="https://instagram.com/jaeden.jones" target="_blank" rel="noopener noreferrer">
+                <img src={instagram} alt="Instagram" className="link" />
+              </a>
+              <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer">
+                <img src={twitter} alt="Twitter" className="link" />
+              </a>
             </div>
           </form>
         </div>

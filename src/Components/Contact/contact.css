@@ -38,6 +38,10 @@
   padding: 2rem;
 }
 
+#contact{
+  margin-top: 3rem;
+}
+
 .contactDesc{
   padding: 1rem;
   font-size:medium;
@@ -53,6 +57,8 @@
   width: 90vw;
   max-width: 60rem;
 }
+
+
 
 .name, .email, .msg{
   font-size: medium;
@@ -82,8 +88,11 @@
 }
 
 .links{
-  display: flex;
   flex-wrap: wrap;
+}
+
+.links:hover{
+  cursor: pointer;
 }
 
 .link{
@@ -92,4 +101,13 @@
   width: 3rem;
   margin: 0 0.75rem;
 }
+
+@media screen and (max-width: 600px){
+
+  .submitBtn{
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+}
+
 

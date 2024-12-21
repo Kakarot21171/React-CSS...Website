@@ -1,8 +1,12 @@
+
 #intro{
     height: calc(100vh - 4rem);
     width: 100vw; 
     max-width: 75rem;
-    margin: 0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0;
+    margin-bottom:-2.03rem;
     overflow: hidden;
     position: relative;
 }
@@ -14,7 +18,7 @@
 
 .bg{
     position: absolute;
-    top: -4rem;  
+    top: -0rem;  
     right: 0;
     z-index: -1;
     object-fit: cover ;
@@ -22,11 +26,21 @@
     max-width: 100%;
 }
 
+/* Default styling for desktop */
+.bg {
+    width: 100%; /* Ensure it scales properly */
+    max-width: 600px; /* Adjust based on your design */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
+  
+
 .introContent{
-    height: 100vh;
+    height: 80vh;
     width: 100vh;
-    padding: 2rem;
-    font-size: 3rem;
+    padding: 1rem;
+    font-size: 3.75rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -48,33 +62,81 @@
     letter-spacing: 1px;
 }
 
+a{
+    width: 122.05px;
+    height: 32.03px;
+}
+.link{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+  }
 .btn{
     background: white;
-    margin: 1rem 0; 
-    padding: 0.75rem 2rem;
+    color: black;
+    display: flex;
     border: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.02px 1rem;
     border-radius: 2rem;
-    width: 10rem;
+    margin-top: 20px;
+    cursor:pointer;
 }
 
 .btnImg{
     object-fit: cover;
     margin: 0 0.25rem;
-    height: 1rem;
     width: 2rem;
 }
+
+.bgMob{
+    display: none;
+}
+
 
 @media screen and (max-width: 480px){
     .bg{
         right: -20vw; 
+        padding-right: 65px;
+        margin-top: 4rem;
     }
-}
-
-@media screen and (max-width: 645px){
+    #intro{
+        margin-bottom: 0rem;
+        
+    }
     .introContent{
         width: 350px;
+        font-size: 2.6rem;
      }  
+
+    
 }
+
+/* Mobile-specific styling */
+@media screen and (max-height: 430px) {
+        #intro{
+            padding-top: 2rem;
+            max-height: 100vh;
+            margin-bottom:80px;
+        }
+        
+        .introContent{
+            font-size: 2.2rem;
+            font-weight: 700;
+         }
+         .bg{
+            margin-top: 6rem;
+            margin-inline: 2rem;
+            width: 45%;
+            padding-right: 60px;
+         }
+  }
+
+
+
+  
 
 
 

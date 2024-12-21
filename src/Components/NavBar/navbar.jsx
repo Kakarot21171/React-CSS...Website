@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import toplogo from '../../assets/logo.png';
-import contact from '../../assets/contact.png';
+import contact from '../../assets/contact.gif';
 import menu from '../../assets/menuGif.gif';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
@@ -22,7 +22,7 @@ const Navbar = () => {
         document.getElementById("contact").scrollIntoView({behavior: "smooth"});
       }
       }>
-        <img src={contact} alt="Contact" className="desktopMenuImg" />Contact Me</button>
+        <img src={contact} alt="Contact" className="desktopMenuImg"/>Contact Me</button>
 
         <img src={menu} alt="Menu" className="mobMenu" onClick={()=>setShowMenu(!showMenu)}/>
         <div className="navMenu" style={{display: showMenu?'flex': 'none' }}>
